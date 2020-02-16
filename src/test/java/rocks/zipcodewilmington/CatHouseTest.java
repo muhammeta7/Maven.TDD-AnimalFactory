@@ -56,7 +56,6 @@ public class CatHouseTest {
         home.add(cat3);
         home.remove(cat3);
         Cat actual = home.getCatById(400);
-        Object expected = null;
 
         // Then
         Assert.assertEquals(null, actual);
@@ -89,9 +88,12 @@ public class CatHouseTest {
         // Given
         Cat cat3 = new Cat(null, null, 600);
         CatHouse home = new CatHouse();
+
+        // When
         home.add(cat3);
         Integer actual = home.getNumberOfCats();
         Integer expected = 1;
+
         // Then
         Assert.assertEquals(expected, actual);
 
