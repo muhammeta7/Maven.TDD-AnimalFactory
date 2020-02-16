@@ -35,18 +35,6 @@ public class CatTest {
         Assert.assertEquals(givenId, retrievedId);
     }
 
-    //
-   /* @BeforeClass
-    public static void beforeClass() throws Exception {
-
-    }
-
-    @AfterClass
-    public static void afterClass() throws Exception {
-
-    }*/
-
-
 
     // Create tests for `void setName(String name)`
     @Test
